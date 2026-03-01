@@ -1,0 +1,14 @@
+<div class="p-fluid">
+  <div class="field">
+    <label for="entreprise">Entreprise</label>
+    <input id="entreprise" pInputText [(ngModel)]="entreprise" />
+  </div>
+  <div class="field">
+    <label for="password">Mot de passe</label>
+    <input id="password" pPassword [(ngModel)]="password" />
+  </div>
+</div>
+<p-footer>
+  <p-button label="Annuler" icon="pi pi-times" (click)="closeDialog()"></p-button>
+  <p-button label="Valider" icon="pi pi-check" (click)="submitForm()"></p-button>
+</p-footer>
